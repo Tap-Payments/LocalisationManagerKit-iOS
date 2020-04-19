@@ -14,6 +14,8 @@
 		E8BC5DE9244C30D4007E3916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DE7244C30D4007E3916 /* Main.storyboard */; };
 		E8BC5DEB244C30D5007E3916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DEA244C30D5007E3916 /* Assets.xcassets */; };
 		E8BC5DEE244C30D5007E3916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DEC244C30D5007E3916 /* LaunchScreen.storyboard */; };
+		E8BC5DF6244C391F007E3916 /* TapJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DF3244C37EC007E3916 /* TapJson.swift */; };
+		E8BC5DFB244C39B8007E3916 /* TapLocalisationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E8BC5DEA244C30D5007E3916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BC5DED244C30D5007E3916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8BC5DEF244C30D5007E3916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BC5DF3244C37EC007E3916 /* TapJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapJson.swift; sourceTree = "<group>"; };
+		E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLocalisationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		E8BC5DD2244C30AE007E3916 /* LocalisationManagerKit-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E8BC5DF7244C396A007E3916 /* Core */,
 				E8BC5DD3244C30AE007E3916 /* LocalisationManagerKit_iOS.h */,
 				E8BC5DD4244C30AF007E3916 /* Info.plist */,
 			);
@@ -87,6 +92,31 @@
 				E8BC5DEF244C30D5007E3916 /* Info.plist */,
 			);
 			path = "LocalisationManagerKit-Example";
+			sourceTree = "<group>";
+		};
+		E8BC5DF7244C396A007E3916 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E8BC5DF9244C3976007E3916 /* Public */,
+				E8BC5DF8244C3971007E3916 /* Private */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8BC5DF8244C3971007E3916 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E8BC5DF3244C37EC007E3916 /* TapJson.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		E8BC5DF9244C3976007E3916 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BC5DF6244C391F007E3916 /* TapJson.swift in Sources */,
+				E8BC5DFB244C39B8007E3916 /* TapLocalisationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
