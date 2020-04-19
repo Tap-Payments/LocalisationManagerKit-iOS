@@ -40,13 +40,24 @@ import Foundation
         
         // If we reached here, this means whether the used provided wrong data or the localistion file provided by the user misses the locale or the keypath provided, now it is time to check if the caller provided a fallBackFile to fetch from
         if let nonNullFullBack = fallBackLocalisationFilePath {
+            // If we will use the fallBack provided file, we will try to fetch the localisation with the provided locale, if not found we will try with device's local otherwise try with en
             if let localisedValueFromProvidedFile:String = localise(for: keyPath, with: selectedLocale, from: nonNullFullBack) {
+                // This means the fall back provided file has the value for the provided locale identefier
+                return localisedValueFromProvidedFile
+            }else if let localisedValueFromProvidedFile:String = localise(for: keyPath, with: (Locale.current.languageCode ?? "en"), from: nonNullFullBack) {
+                // This means the fall back provided file didn't have the value for the provided locale identefier, but has the locale of the device
+                return localisedValueFromProvidedFile
+            }else if let localisedValueFromProvidedFile:String = localise(for: keyPath, with: "en", from: nonNullFullBack) {
+                // This means we are trying to fall back to en if any
                 return localisedValueFromProvidedFile
             }
         }
         
         return keyPath
     }
+    
+    
+    
     
     
     /**
