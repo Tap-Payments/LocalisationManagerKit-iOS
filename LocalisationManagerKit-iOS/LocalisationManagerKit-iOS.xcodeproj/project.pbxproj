@@ -114,9 +114,17 @@
 		E8BC5DF9244C3976007E3916 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				E8BC5DFC244C43CE007E3916 /* enum */,
 				E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		E8BC5DFC244C43CE007E3916 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

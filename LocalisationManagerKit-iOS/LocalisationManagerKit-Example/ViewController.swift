@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import LocalisationManagerKit_iOS
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let shared = TapLocalisationManager.shared
+        shared.
     }
 
 

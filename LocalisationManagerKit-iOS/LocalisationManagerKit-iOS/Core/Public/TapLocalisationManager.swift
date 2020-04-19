@@ -7,15 +7,17 @@
 //
 
 import Foundation
+/// Represents  the tap localisation singleton class
 @objc public class TapLocalisationManager: NSObject {
     
-    @objc public static let TapLocalisationLangKey = "TapLocalisationLangKeyLocale";
+    /// This is the shared instance of the tap localiser, this is what you  have to use to access the available methods
+    @objc public static let shared = TapLocalisationManager()
+    /// Please set the localisation json file path you want the localiser to fetch values from
+    @objc public var localisationFilePath:URL?
+    /// Please set the locale you want the localiser to use
+    @objc public var localisationLocale:String?
     
     
 }
 
 
-extension NSObject {
-    
-    //let localisationKey:String?
-}
