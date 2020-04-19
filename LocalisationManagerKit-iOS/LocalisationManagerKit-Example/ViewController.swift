@@ -19,17 +19,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        shared.localisationLocale = "ar"
+        shared.localisationLocale = "en"
         shared.localisationFilePath = URL(fileURLWithPath:Bundle.main.path(forResource: "localize", ofType: "json")!)
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        localise()
+    }
+    
+    func localise() {
         label1.text = shared.localisedValue(for: "view1.label1")
         label2.text = shared.localisedValue(for: "view2.label2")
+        
+        button1.setTitle(shared.localisedValue(for: "view1.button1"), for: .normal)
+        button2.setTitle(shared.localisedValue(for: "view2.button2"), for: .normal)
     }
 
-
+    @IBAction func languageChanged(_ sender: Any) {
+        if let segment = sender as? UISegmentedControl {
+            if segment.selectedSegmentIndex == 0 {
+                shared.localisationLocale = "en"
+            }else {
+                shared.localisationLocale = "ar"
+            }
+            
+            localise()
+        }
+    }
+    
 }
 

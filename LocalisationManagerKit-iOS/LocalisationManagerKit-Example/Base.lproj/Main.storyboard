@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="No2-7Q-ahc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tap Localisation Manager-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalisationManagerKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="LocalisationManagerKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COE-qh-FNc">
-                                <rect key="frame" x="20" y="44" width="374" height="128"/>
+                                <rect key="frame" x="20" y="189" width="374" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDg-jh-Zl9">
                                         <rect key="frame" x="166" y="8" width="42" height="20.5"/>
@@ -42,7 +42,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-6M-ob4">
-                                <rect key="frame" x="20" y="192" width="374" height="128"/>
+                                <rect key="frame" x="20" y="337" width="374" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7A-mS-jJO">
                                         <rect key="frame" x="166" y="8" width="42" height="20.5"/>
@@ -66,19 +66,32 @@
                                     <constraint firstItem="V7A-mS-jJO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WWt-6M-ob4" secondAttribute="leading" id="yOK-Eg-Rlo"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V39-OS-CL3">
+                                <rect key="frame" x="142.5" y="108" width="129" height="32"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="عربي"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="L7r-BK-xm8"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="COE-qh-FNc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mma-f0-VmS"/>
-                            <constraint firstItem="COE-qh-FNc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QSs-kM-B4K"/>
                             <constraint firstItem="WWt-6M-ob4" firstAttribute="top" secondItem="COE-qh-FNc" secondAttribute="bottom" constant="20" id="SMm-9U-5Ce"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COE-qh-FNc" secondAttribute="trailing" constant="20" id="fg8-sO-v8c"/>
+                            <constraint firstItem="V39-OS-CL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="go1-XY-adG"/>
+                            <constraint firstItem="COE-qh-FNc" firstAttribute="top" secondItem="V39-OS-CL3" secondAttribute="bottom" constant="50" id="idx-Fo-yGZ"/>
                             <constraint firstItem="WWt-6M-ob4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lHD-Rh-xdt"/>
+                            <constraint firstItem="V39-OS-CL3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sfB-Qy-UwX"/>
                             <constraint firstItem="WWt-6M-ob4" firstAttribute="top" secondItem="COE-qh-FNc" secondAttribute="bottom" constant="20" id="uoV-JZ-R8C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WWt-6M-ob4" secondAttribute="trailing" constant="20" id="zCB-Ds-yis"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Tap Localisation Manager" id="scr-8U-iJL"/>
                     <connections>
                         <outlet property="button1" destination="h7Y-cS-mR6" id="gsw-6k-gFs"/>
                         <outlet property="button2" destination="Sgf-pP-5EB" id="o6V-dc-GdV"/>
@@ -88,7 +101,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="246" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6E3-AG-flQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="No2-7Q-ahc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g9U-rU-Ppn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hPA-ak-3S9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8v-Fo-9uE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.01449275362324" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
