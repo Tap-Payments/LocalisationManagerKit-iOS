@@ -16,6 +16,7 @@
 		E8BC5DEE244C30D5007E3916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DEC244C30D5007E3916 /* LaunchScreen.storyboard */; };
 		E8BC5DF6244C391F007E3916 /* TapJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DF3244C37EC007E3916 /* TapJson.swift */; };
 		E8BC5DFB244C39B8007E3916 /* TapLocalisationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */; };
+		E8BC5E00244C6021007E3916 /* localize.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DFE244C5D68007E3916 /* localize.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E8BC5DEF244C30D5007E3916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8BC5DF3244C37EC007E3916 /* TapJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapJson.swift; sourceTree = "<group>"; };
 		E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLocalisationManager.swift; sourceTree = "<group>"; };
+		E8BC5DFE244C5D68007E3916 /* localize.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localize.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				E8BC5DE1244C30D4007E3916 /* AppDelegate.swift */,
 				E8BC5DE3244C30D4007E3916 /* SceneDelegate.swift */,
 				E8BC5DE5244C30D4007E3916 /* ViewController.swift */,
+				E8BC5DFE244C5D68007E3916 /* localize.json */,
 				E8BC5DE7244C30D4007E3916 /* Main.storyboard */,
 				E8BC5DEA244C30D5007E3916 /* Assets.xcassets */,
 				E8BC5DEC244C30D5007E3916 /* LaunchScreen.storyboard */,
@@ -97,6 +100,7 @@
 		E8BC5DF7244C396A007E3916 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E8BC5DFD244C5D53007E3916 /* assets */,
 				E8BC5DF9244C3976007E3916 /* Public */,
 				E8BC5DF8244C3971007E3916 /* Private */,
 			);
@@ -125,6 +129,13 @@
 			children = (
 			);
 			path = enum;
+			sourceTree = "<group>";
+		};
+		E8BC5DFD244C5D53007E3916 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BC5E00244C6021007E3916 /* localize.json in Resources */,
 				E8BC5DEE244C30D5007E3916 /* LaunchScreen.storyboard in Resources */,
 				E8BC5DEB244C30D5007E3916 /* Assets.xcassets in Resources */,
 				E8BC5DE9244C30D4007E3916 /* Main.storyboard in Resources */,
