@@ -1,0 +1,30 @@
+{
+    "en": {
+        "view1": {
+            "label1": "This is english default label 1",
+            "button1": "This is english default button 1"
+        },
+        "view2": {
+            "label2": "This is english default label 2",
+            "button2": "This is english default button 2"
+        },
+        "view3": {
+            "label3": "This is english fallback label",
+            "button3": "This is english fallback button"
+        }
+    },
+    "ar": {
+        "view1": {
+            "label1": "القيمة  التلقائية ل نص رقم ١",
+            "button1": "القيمة  التلقائية ل العنوان رقم ١",
+        },
+        "view2": {
+            "label2": "القيمة  التلقائية ل نص رقم ٢",
+            "button2": "القيمة  التلقائية ل العنوان رقم ٢",
+        },
+        "view3": {
+            "label3": "القيمة الإحتياطية ل نص رقم ٣",
+            "button3": "لقيمة الإحتياطية ل العنوان رقم ٣",
+        }
+    }
+}

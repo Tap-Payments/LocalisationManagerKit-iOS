@@ -76,17 +76,44 @@
                                     <action selector="languageChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="L7r-BK-xm8"/>
                                 </connections>
                             </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3a-xr-PZw">
+                                <rect key="frame" x="20" y="485" width="374" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmn-9P-1Aa">
+                                        <rect key="frame" x="166" y="8" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEP-6k-7UO">
+                                        <rect key="frame" x="164" y="98" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Wmn-9P-1Aa" firstAttribute="top" secondItem="W3a-xr-PZw" secondAttribute="top" constant="8" id="7DE-vQ-bmi"/>
+                                    <constraint firstAttribute="bottom" secondItem="OEP-6k-7UO" secondAttribute="bottom" id="E4Z-eQ-Pbl"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wmn-9P-1Aa" secondAttribute="trailing" id="LKE-J9-SS8"/>
+                                    <constraint firstItem="Wmn-9P-1Aa" firstAttribute="centerX" secondItem="W3a-xr-PZw" secondAttribute="centerX" id="MuV-UR-5Pd"/>
+                                    <constraint firstItem="Wmn-9P-1Aa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="W3a-xr-PZw" secondAttribute="leading" id="kh6-8t-CJ5"/>
+                                    <constraint firstItem="OEP-6k-7UO" firstAttribute="centerX" secondItem="W3a-xr-PZw" secondAttribute="centerX" id="kjP-cy-udk"/>
+                                    <constraint firstAttribute="height" constant="128" id="uZf-lc-j3V"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="W3a-xr-PZw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7dm-lV-iWu"/>
                             <constraint firstItem="COE-qh-FNc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Mma-f0-VmS"/>
-                            <constraint firstItem="WWt-6M-ob4" firstAttribute="top" secondItem="COE-qh-FNc" secondAttribute="bottom" constant="20" id="SMm-9U-5Ce"/>
+                            <constraint firstItem="W3a-xr-PZw" firstAttribute="top" secondItem="WWt-6M-ob4" secondAttribute="bottom" constant="20" id="Ttv-y9-hTI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COE-qh-FNc" secondAttribute="trailing" constant="20" id="fg8-sO-v8c"/>
                             <constraint firstItem="V39-OS-CL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="go1-XY-adG"/>
                             <constraint firstItem="COE-qh-FNc" firstAttribute="top" secondItem="V39-OS-CL3" secondAttribute="bottom" constant="50" id="idx-Fo-yGZ"/>
                             <constraint firstItem="WWt-6M-ob4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lHD-Rh-xdt"/>
                             <constraint firstItem="V39-OS-CL3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sfB-Qy-UwX"/>
                             <constraint firstItem="WWt-6M-ob4" firstAttribute="top" secondItem="COE-qh-FNc" secondAttribute="bottom" constant="20" id="uoV-JZ-R8C"/>
+                            <constraint firstAttribute="trailing" secondItem="W3a-xr-PZw" secondAttribute="trailing" constant="20" id="ws3-Uc-RIm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WWt-6M-ob4" secondAttribute="trailing" constant="20" id="zCB-Ds-yis"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -95,8 +122,10 @@
                     <connections>
                         <outlet property="button1" destination="h7Y-cS-mR6" id="gsw-6k-gFs"/>
                         <outlet property="button2" destination="Sgf-pP-5EB" id="o6V-dc-GdV"/>
+                        <outlet property="button3" destination="OEP-6k-7UO" id="BI8-Z3-1EF"/>
                         <outlet property="label1" destination="uDg-jh-Zl9" id="qtH-ak-vBW"/>
                         <outlet property="label2" destination="V7A-mS-jJO" id="fYY-nS-9xG"/>
+                        <outlet property="label3" destination="Wmn-9P-1Aa" id="ZjH-TX-wT0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
