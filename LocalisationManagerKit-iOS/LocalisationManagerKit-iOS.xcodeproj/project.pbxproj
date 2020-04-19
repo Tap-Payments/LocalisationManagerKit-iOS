@@ -103,7 +103,6 @@
 		E8BC5DF7244C396A007E3916 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E8BC5DFD244C5D53007E3916 /* assets */,
 				E8BC5DF9244C3976007E3916 /* Public */,
 				E8BC5DF8244C3971007E3916 /* Private */,
 			);
@@ -121,24 +120,9 @@
 		E8BC5DF9244C3976007E3916 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				E8BC5DFC244C43CE007E3916 /* enum */,
 				E8BC5DFA244C39B8007E3916 /* TapLocalisationManager.swift */,
 			);
 			path = Public;
-			sourceTree = "<group>";
-		};
-		E8BC5DFC244C43CE007E3916 /* enum */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = enum;
-			sourceTree = "<group>";
-		};
-		E8BC5DFD244C5D53007E3916 /* assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
