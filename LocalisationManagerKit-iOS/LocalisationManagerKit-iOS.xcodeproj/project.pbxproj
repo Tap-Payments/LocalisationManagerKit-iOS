@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E84F6E332899C55C002C0120 /* LocalisationManagerKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BC5DD0244C30AE007E3916 /* LocalisationManagerKit_iOS.framework */; };
+		E84F6E342899C55C002C0120 /* LocalisationManagerKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8BC5DD0244C30AE007E3916 /* LocalisationManagerKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8BC5DD5244C30AF007E3916 /* LocalisationManagerKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BC5DD3244C30AE007E3916 /* LocalisationManagerKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8BC5DE2244C30D4007E3916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DE1244C30D4007E3916 /* AppDelegate.swift */; };
 		E8BC5DE4244C30D4007E3916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BC5DE3244C30D4007E3916 /* SceneDelegate.swift */; };
@@ -19,6 +21,30 @@
 		E8BC5E00244C6021007E3916 /* localize.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5DFE244C5D68007E3916 /* localize.json */; };
 		E8BC5E02244C708D007E3916 /* fallback.json in Resources */ = {isa = PBXBuildFile; fileRef = E8BC5E01244C708D007E3916 /* fallback.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E84F6E352899C55C002C0120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8BC5DC7244C30AE007E3916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8BC5DCF244C30AE007E3916;
+			remoteInfo = "LocalisationManagerKit-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E84F6E372899C55C002C0120 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E84F6E342899C55C002C0120 /* LocalisationManagerKit_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E8BC5DD0244C30AE007E3916 /* LocalisationManagerKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalisationManagerKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,18 +76,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84F6E332899C55C002C0120 /* LocalisationManagerKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E84F6E322899C55C002C0120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8BC5DC6244C30AE007E3916 = {
 			isa = PBXGroup;
 			children = (
 				E8BC5DD2244C30AE007E3916 /* LocalisationManagerKit-iOS */,
 				E8BC5DE0244C30D4007E3916 /* LocalisationManagerKit-Example */,
 				E8BC5DD1244C30AE007E3916 /* Products */,
+				E84F6E322899C55C002C0120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,10 +199,12 @@
 				E8BC5DDB244C30D4007E3916 /* Sources */,
 				E8BC5DDC244C30D4007E3916 /* Frameworks */,
 				E8BC5DDD244C30D4007E3916 /* Resources */,
+				E84F6E372899C55C002C0120 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E84F6E362899C55C002C0120 /* PBXTargetDependency */,
 			);
 			name = "LocalisationManagerKit-Example";
 			productName = "LocalisationManagerKit-Example";
@@ -254,6 +291,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E84F6E362899C55C002C0120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8BC5DCF244C30AE007E3916 /* LocalisationManagerKit-iOS */;
+			targetProxy = E84F6E352899C55C002C0120 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E8BC5DE7244C30D4007E3916 /* Main.storyboard */ = {
